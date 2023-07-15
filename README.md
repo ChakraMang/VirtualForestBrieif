@@ -22,5 +22,6 @@ To set up Virtual Forest on your local environment, follow these steps:
 
 1. Clone the repository to your machine.
 2. Install the necessary dependencies by running `npm install`.
-3. Launch the APIs by executing `npm start`.
-4. Use Postman or other software to run APIs at localhost:3000 or the port you provide in .env file
+3. Add env files having the Mongo DB url.
+4. Launch the APIs by executing `npm start`.
+5. Use Postman or other software to run APIs at localhost:3000 or the port you provide in .env file.
