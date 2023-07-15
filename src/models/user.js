@@ -1,10 +1,15 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true },
   email: { type: String, required: true },
+  level: { type: Number, default: 1 },
+  stage: { type: String },
+  badges: { type: [], default: [] },
+  walletAddress: { type: String },
+  backgrounds: { type: [], default: [] },
   password: { type: String, required: true },
-  friends: { type: [], default: []},
+  friends: { type: [], default: [] },
   seedBag: { type: Number, default: 1 },
   manureBag: { type: Number, default: 0 },
   credits: { type: Number, default: 0 },
@@ -16,4 +21,4 @@ const userSchema = new mongoose.Schema({
   deletedAt: { type: Date },
 });
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model("User", userSchema);

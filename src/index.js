@@ -16,7 +16,7 @@ app.use(express.json());
 // Routes
 app.use("/users", require("./routes/users"));
 app.use("/seeds", require("./routes/seeds"));
-// app.use('/trees', require('./routes/trees'));
+app.use('/trees', require('./routes/trees'));
 app.use("/facts", require("./routes/facts"));
 
 // Start the server

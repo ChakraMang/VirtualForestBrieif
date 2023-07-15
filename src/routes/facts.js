@@ -1,8 +1,8 @@
-const express = require('express')
+const express = require("express");
 const router = express.Router();
-const FactController = require('../controllers/facts');
+const FactController = require("../controllers/facts");
 
-router.post('/',FactController.createFact);
-router.get('/', FactController.getFact);
+router.post("/", FactController.createFact);
+router.get("/", FactController.getFact);
 
 module.exports = router;
